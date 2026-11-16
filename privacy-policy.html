@@ -58,12 +58,20 @@
     <p class="muted">We don't collect location, contacts, photos, microphone or camera data beyond the features below.
       Optional reading aloud asks for microphone permission when the child first taps “Start reading”. The audio is processed by the phone's speech-recognition service (usually Google); the app only receives the recognized text, compares it with the sentence on the page and keeps neither audio nor text.
       QR scanning uses the Google Play services scanner; the app gets no camera access.</p>
+    <p class="muted">Scanning a paper book (optional, parent mode only): the pages are photographed with the Google Play services document scanner
+      or chosen from the gallery with the system photo picker, so the app has no camera permission and sees only the pages you scan or pick.
+      The text is recognized on the phone itself, by Google's ML Kit library built into the app. The photos are not sent to us or to anyone else,
+      and the app deletes its temporary copies as soon as the text has been read (photos you picked stay in your own gallery).
+      Only the recognized text stays on the phone, as a book in the library.</p>
   </section>
 
   <section>
     <h2>Who we share data with</h2>
     <p>Nobody, except our infrastructure provider Google Firebase (Authentication, Cloud Firestore), which processes data on our behalf.
-      Book searches are sent to Project Gutenberg (gutenberg.org, with Gutendex as a backup) and contain only the search text, never data about the child.</p>
+      Book searches are sent to Project Gutenberg (gutenberg.org, with Gutendex as a backup) and to Romanian Wikisource (ro.wikisource.org, run by the Wikimedia Foundation).
+      Books are downloaded from gutenberg.org and from the Wikisource export tool (ws-export.wmcloud.org).
+      These requests contain only the search text or the title of the book, never data about the child; like any website, these services see the phone's IP address.
+      Google's ML Kit library, used for scanning paper books, may send Google technical usage statistics (such as performance and device model), but never the photos or the recognized text.</p>
   </section>
 
   <section>

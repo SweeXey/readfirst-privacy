@@ -59,12 +59,20 @@
     <p class="muted">Nu colectăm localizarea, contactele, fotografiile, microfonul sau camera în afara funcțiilor de mai jos.
       Cititul cu voce tare (opțional) cere permisiunea de microfon prima dată când copilul apasă „Încep să citesc”. Sunetul e prelucrat de serviciul de recunoaștere vocală al telefonului (de obicei Google); aplicația primește doar textul recunoscut, îl compară cu propoziția de pe pagină și nu păstrează nici sunetul, nici textul.
       Scanarea codului QR folosește scannerul Google Play Services, iar aplicația nu primește acces la cameră.</p>
+    <p class="muted">Scanarea unei cărți de hârtie (opțional, doar în modul părinte): paginile se fotografiază cu scanerul de documente din Google Play Services
+      sau se aleg din galerie cu selectorul de fotografii al telefonului, deci aplicația nu are permisiunea de cameră și vede doar paginile scanate sau alese de tine.
+      Textul este recunoscut chiar pe telefon, de biblioteca ML Kit de la Google inclusă în aplicație. Fotografiile nu ne sunt trimise nouă și nici altcuiva,
+      iar aplicația își șterge copiile temporare imediat ce textul a fost citit (fotografiile alese rămân în galeria ta).
+      Pe telefon rămâne doar textul recunoscut, ca o carte în bibliotecă.</p>
   </section>
 
   <section>
     <h2>Cu cine partajăm</h2>
     <p>Cu nimeni, în afară de furnizorul de infrastructură Google Firebase (Authentication, Cloud Firestore), care prelucrează datele în numele nostru.
-      Căutările de cărți se trimit către Project Gutenberg (gutenberg.org, cu Gutendex ca rezervă). Ele conțin doar textul căutat, fără date despre copil.</p>
+      Căutările de cărți se trimit către Project Gutenberg (gutenberg.org, cu Gutendex ca rezervă) și către Wikisource în română (ro.wikisource.org, administrat de Fundația Wikimedia).
+      Cărțile se descarcă de pe gutenberg.org și de la unealta de export Wikisource (ws-export.wmcloud.org).
+      Aceste cereri conțin doar textul căutat sau titlul cărții, fără date despre copil; ca orice site, aceste servicii văd adresa IP a telefonului.
+      Biblioteca ML Kit de la Google, folosită la scanarea cărților de hârtie, poate trimite către Google statistici tehnice de utilizare (de exemplu performanța și modelul telefonului), dar niciodată fotografiile sau textul recunoscut.</p>
   </section>
 
   <section>
