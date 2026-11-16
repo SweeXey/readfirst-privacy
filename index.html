@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ReadFirst — Privacy Policy</title>
+<style>
+  :root { --ink:#1b1b21; --muted:#5c5b68; --accent:#4f3cc9; --bg:#f6f5fa; --card:#fff; --line:#e2e1ea; }
+  body { margin:0; background:var(--bg); color:var(--ink); font:16px/1.6 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif; }
+  main { max-width:760px; margin:0 auto; padding:32px 16px 64px; }
+  h1 { font-size:28px; margin:0 0 4px; }
+  h2 { font-size:19px; margin:32px 0 8px; color:var(--accent); }
+  .muted { color:var(--muted); font-size:14px; }
+  section { background:var(--card); border:1px solid var(--line); border-radius:14px; padding:4px 20px 12px; margin-top:16px; }
+  table { border-collapse:collapse; width:100%; font-size:15px; }
+  td, th { text-align:left; padding:8px 6px; border-bottom:1px solid var(--line); vertical-align:top; }
+  th { color:var(--muted); font-weight:600; }
+</style>
+</head>
+<body>
+<main>
+  <h1>Privacy Policy</h1>
+  <p class="muted">ReadFirst · last updated: 16 November 2026 · <a href="politica-confidentialitate.html">Română</a></p>
+
+  <section>
+    <h2>In short</h2>
+    <ul>
+      <li>ReadFirst lets parents give children screen time in exchange for reading.</li>
+      <li>No ads, no analytics or tracking tools, and we never sell or rent data.</li>
+      <li>Children don't create accounts or enter personal information.</li>
+      <li>Unless you turn on the optional “Account &amp; family” feature, all data stays on the phone.</li>
+      <li>Parents can delete all data at any time from inside the app.</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Who is responsible</h2>
+    <p>Alin (independent developer), email: <a href="mailto:siclovan.alyn@gmail.com">siclovan.alyn@gmail.com</a>. Write to this address for any question about your data or to exercise your GDPR rights.</p>
+  </section>
+
+  <section>
+    <h2>What data we use</h2>
+    <table>
+      <tr><th>Data</th><th>Where it's stored</th><th>Why</th></tr>
+      <tr><td>Imported or downloaded books, reading position, pages read, minutes earned and used</td>
+          <td>On the phone only</td><td>Core features (reading, screen-time credit, report)</td></tr>
+      <tr><td>App rules and reading settings</td><td>On the phone; in the cloud only with “Account &amp; family”</td>
+          <td>Blocking apps, remote management</td></tr>
+      <tr><td>The app currently in the foreground (package name), read locally via “Usage access”</td>
+          <td>On the phone only, no history kept</td><td>Applying the rules (block / use minutes)</td></tr>
+      <tr><td>Parent PIN (salted hash only)</td><td>On the phone only</td><td>Protecting the settings</td></tr>
+      <tr><td>Parent's email</td><td>Firebase Authentication (Google)</td><td>Parent account, only if you use “Account &amp; family”</td></tr>
+      <tr><td>An anonymous ID for the child's phone and the name the parent chooses for the child (a nickname is fine)</td>
+          <td>Firebase (Google)</td><td>Linking phones in the same family</td></tr>
+      <tr><td>The list of apps with an icon on the child's phone (names only), minute balance, number of pages, 7-day report, titles and links of books sent by the parent</td>
+          <td>Cloud Firestore (Google)</td><td>The parent's remote management screens</td></tr>
+    </table>
+    <p class="muted">We don't collect location, contacts, photos, microphone or camera data beyond the features below.
+      Optional reading aloud asks for microphone permission when the child first taps “Start reading”. The audio is processed by the phone's speech-recognition service (usually Google); the app only receives the recognized text, compares it with the sentence on the page and keeps neither audio nor text.
+      QR scanning uses the Google Play services scanner; the app gets no camera access.</p>
+  </section>
+
+  <section>
+    <h2>Who we share data with</h2>
+    <p>Nobody, except our infrastructure provider Google Firebase (Authentication, Cloud Firestore), which processes data on our behalf.
+      Book searches are sent to Project Gutenberg (gutenberg.org, with Gutendex as a backup) and contain only the search text, never data about the child.</p>
+  </section>
+
+  <section>
+    <h2>Retention and deletion</h2>
+    <ul>
+      <li>Data on the phone is kept until you uninstall the app or use <b>Parent mode → Privacy &amp; data → Delete data on this phone</b>.</li>
+      <li>The account and family data in the cloud are kept until you use <b>Delete account and cloud data</b>. Deletion is immediate and permanent, and covers all linked children.</li>
+      <li>You can also request deletion by email at the address above.</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Children</h2>
+    <p>The app is installed and set up by a parent or guardian, who gives consent the first time the app is opened.
+      Children don't create accounts, see no ads, can't buy anything and can't communicate with other people through the app.
+      Children's data is used only so the parent can follow their reading and set the rules.</p>
+  </section>
+
+  <section>
+    <h2>Your rights (GDPR)</h2>
+    <p>You have the right of access, rectification, erasure, restriction, portability and objection, and the right to lodge a complaint with your data protection authority.
+      Processing is based on the parent's consent and on providing the service the parent asked for.</p>
+  </section>
+
+  <section>
+    <h2>Special permissions on the child's phone</h2>
+    <ul>
+      <li><b>Usage access</b>: so the app knows which app is open and can apply the rules.</li>
+      <li><b>Display over other apps</b>: for the “Reading break” screen over a blocked app.</li>
+      <li><b>Device admin</b> (optional): so the child can't easily uninstall the app.</li>
+      <li><b>Microphone</b> (optional): only for reading aloud, only while the child is reading a sentence.</li>
+      <li><b>Foreground service</b>: so protection keeps running in the background, with a persistent notification.</li>
+    </ul>
+  </section>
+</main>
+</body>
+</html>
