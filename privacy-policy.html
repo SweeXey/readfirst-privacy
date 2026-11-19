@@ -48,7 +48,7 @@
           <td>Blocking apps, remote management</td></tr>
       <tr><td>The app currently in the foreground (package name), read locally via “Usage access”</td>
           <td>On the phone only, no history kept</td><td>Applying the rules (block / use minutes)</td></tr>
-      <tr><td>Parent PIN (salted hash only)</td><td>On the phone only</td><td>Protecting the settings</td></tr>
+      <tr><td>Parent PIN and recovery code (salted hashes only)</td><td>On the phone; if you set a new PIN for a child's phone from your own phone, only its salted hash goes through Cloud Firestore (Google)</td><td>Protecting the settings, resetting a forgotten PIN</td></tr>
       <tr><td>Parent's email</td><td>Firebase Authentication (Google)</td><td>Parent account, only if you use “Account &amp; family”</td></tr>
       <tr><td>An anonymous ID for the child's phone and the name the parent chooses for the child (a nickname is fine)</td>
           <td>Firebase (Google)</td><td>Linking phones in the same family</td></tr>
